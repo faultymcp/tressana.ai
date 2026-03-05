@@ -586,11 +586,24 @@ footer{padding:72px var(--pad-side) 36px;border-top:1px solid var(--border)}
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-// Loader
-window.addEventListener('load', () => {
-  setTimeout(() => document.getElementById('loader').classList.add('done'), 1800);
-});
+<script>
+// Loader — dismiss after 1.8s regardless of resource loading
+(function() {
+  var loader = document.getElementById('loader');
+  function hideLoader() { 
+    if (loader) loader.classList.add('done'); 
+  }
+  // Primary: dismiss after 1.8s from when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(hideLoader, 1800);
+    });
+  } else {
+    setTimeout(hideLoader, 1800);
+  }
+  // Failsafe: always dismiss after 3.5s no matter what
+  setTimeout(hideLoader, 3500);
+})();
 
 // Cursor glow
 const glow = document.getElementById('glow');
