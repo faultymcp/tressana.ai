@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tressana Blog — Hair Care Science, Tips & AI Intelligence</title>
+<meta name="description" content="Expert articles on hair care science, texture-specific tips, ingredient analysis, and AI-powered hair intelligence. Written for every hair type from 1A to 4C.">
+<link rel="canonical" href="https://tressana.ai/blog/">
+<meta property="og:title" content="Tressana Blog — Hair Care Science & Texture Intelligence">
+<meta property="og:description" content="Expert hair care articles for every texture. Science-backed tips from 1A to 4C.">
+<meta property="og:url" content="https://tressana.ai/blog/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tressana">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--porcelain:#FFFEF7;--midnight:#332463;--violet:#7643AC;--lavender:#C38CD9;--pink:#F484B9;--lime:#D9FF00;--ink:#120B2E;--bg:#120B2E;--bg2:#1A1236;--bg3:#231845;--border:rgba(195,140,217,0.08);--muted:rgba(255,254,247,0.45);--muted2:rgba(255,254,247,0.25);--grad:linear-gradient(135deg,#7643AC 0%,#F484B9 60%,#C38CD9 100%);--grad-text:linear-gradient(135deg,#C38CD9 0%,#F484B9 50%,#D9FF00 100%);--font-h:'Sora',sans-serif;--font-b:'Inter',sans-serif;--font-m:'Space Mono',monospace;--pad-section:clamp(40px,6vw,80px);--pad-side:clamp(24px,5vw,80px)}
+html{scroll-behavior:smooth;background:var(--bg);color:var(--porcelain);font-family:var(--font-b);-webkit-font-smoothing:antialiased}
+body{background:var(--bg);overflow-x:hidden}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+::selection{background:var(--violet);color:#fff}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px var(--pad-side);display:flex;align-items:center;justify-content:space-between;background:rgba(18,11,46,0.85);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--border);transition:transform .4s}
+.nav-logo{font-family:var(--font-h);font-weight:700;font-size:20px;display:flex;align-items:center}
+.nav-logo .t{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-logo .d{color:var(--pink)}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{font-size:13px;font-weight:500;color:var(--muted);letter-spacing:.5px;text-transform:uppercase;transition:color .3s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--grad);transition:width .3s}
+.nav-links a:hover,.nav-links a.active{color:var(--porcelain)}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.nav-cta{font-family:var(--font-h);font-size:13px;font-weight:600;padding:10px 28px;border-radius:100px;border:none;cursor:pointer;background:var(--porcelain);color:var(--ink);transition:all .3s;letter-spacing:.3px}
+.nav-cta:hover{background:var(--lime);transform:scale(1.04)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{display:block;width:22px;height:2px;background:var(--porcelain);border-radius:2px}
+
+.page-hero{min-height:40vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:160px var(--pad-side) 60px;position:relative;overflow:hidden}
+.page-hero-orb{position:absolute;top:-120px;left:50%;transform:translateX(-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(118,67,172,0.1) 0%,transparent 60%);pointer-events:none}
+.page-hero-tag{font-family:var(--font-m);font-size:12px;color:var(--lime);letter-spacing:3px;text-transform:uppercase;margin-bottom:24px}
+.page-hero h1{font-family:var(--font-h);font-size:clamp(36px,7vw,72px);font-weight:800;line-height:1;letter-spacing:-2px}
+.page-hero h1 em{font-style:normal;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.page-hero-sub{font-size:clamp(15px,1.6vw,18px);font-weight:300;color:var(--muted);max-width:520px;line-height:1.7;margin-top:24px}
+
+/* BLOG GRID */
+.blog-sec{padding:var(--pad-section) var(--pad-side)}
+.blog-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.blog-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:all .4s;cursor:pointer}
+.blog-card:hover{background:var(--bg3);transform:translateY(-4px);box-shadow:0 16px 48px rgba(118,67,172,.15)}
+.blog-card--featured{grid-column:1/-1}
+.blog-card__img{width:100%;height:220px;object-fit:cover;transition:transform .4s}
+.blog-card--featured .blog-card__img{height:320px}
+.blog-card:hover .blog-card__img{transform:scale(1.03)}
+.blog-card__img-wrap{overflow:hidden;position:relative}
+.blog-card__cat{position:absolute;top:16px;left:16px;font-family:var(--font-m);font-size:10px;color:var(--ink);letter-spacing:1.5px;text-transform:uppercase;padding:5px 12px;background:var(--lime);border-radius:100px}
+.blog-card__body{padding:28px}
+.blog-card__date{font-family:var(--font-m);font-size:11px;color:var(--muted2);letter-spacing:1px;margin-bottom:12px;display:block}
+.blog-card__title{font-family:var(--font-h);font-size:22px;font-weight:700;letter-spacing:-.3px;line-height:1.25;margin-bottom:12px;transition:color .3s}
+.blog-card--featured .blog-card__title{font-size:28px}
+.blog-card:hover .blog-card__title{color:var(--lavender)}
+.blog-card__excerpt{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:20px;text-align:justify;hyphens:auto}
+.blog-card__link{font-family:var(--font-m);font-size:11px;color:var(--lime);letter-spacing:1.5px;text-transform:uppercase;display:inline-flex;align-items:center;gap:8px;transition:gap .3s}
+.blog-card:hover .blog-card__link{gap:12px}
+
+/* NEWSLETTER */
+.newsletter{padding:var(--pad-section) var(--pad-side);text-align:center;border-top:1px solid var(--border);position:relative;overflow:hidden}
+.newsletter-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:300px;background:radial-gradient(ellipse,rgba(118,67,172,0.1) 0%,transparent 60%);pointer-events:none}
+.newsletter h2{font-family:var(--font-h);font-size:clamp(28px,5vw,48px);font-weight:800;letter-spacing:-1.5px}
+.newsletter h2 em{font-style:normal;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.newsletter p{font-size:16px;color:var(--muted);font-weight:300;margin:16px auto 32px;max-width:400px}
+.newsletter-form{max-width:460px;margin:0 auto;display:flex;gap:0;border-radius:100px;overflow:hidden;border:1px solid var(--border)}
+.newsletter-form input{flex:1;padding:14px 24px;font-family:var(--font-b);font-size:14px;background:var(--bg2);border:none;color:var(--porcelain);outline:none}
+.newsletter-form input::placeholder{color:var(--muted2)}
+.newsletter-form button{padding:14px 28px;font-family:var(--font-h);font-size:12px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;background:var(--grad);color:#fff;border:none;cursor:pointer;transition:opacity .3s}
+.newsletter-form button:hover{opacity:.85}
+
+footer{padding:72px var(--pad-side) 36px;border-top:1px solid var(--border)}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:64px}
+.footer-brand{font-family:var(--font-h);font-size:24px;font-weight:700;margin-bottom:14px}
+.footer-brand .t{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.footer-brand .d{color:var(--pink)}
+.footer-tagline{font-size:14px;color:var(--muted);line-height:1.7;max-width:280px}
+.footer-col h4{font-family:var(--font-m);font-size:10px;color:var(--muted2);letter-spacing:2px;text-transform:uppercase;margin-bottom:16px}
+.footer-col a{display:block;font-size:14px;color:var(--muted);padding:5px 0;transition:color .3s}
+.footer-col a:hover{color:var(--lime)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:28px;border-top:1px solid var(--border)}
+.footer-copy{font-size:12px;color:var(--muted2)}
+.footer-socials{display:flex;gap:20px}
+.footer-socials a{font-size:12px;color:var(--muted2);transition:color .3s}
+.footer-socials a:hover{color:var(--lime)}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(36px);transition:all .7s cubic-bezier(.22,1,.36,1)}
+.reveal.vis{opacity:1;transform:translateY(0)}
+.reveal-d1{transition-delay:.1s}.reveal-d2{transition-delay:.2s}
+
+@media(max-width:900px){
+  .nav-links{display:none;flex-direction:column;position:fixed;top:61px;left:0;right:0;background:rgba(18,11,46,.97);backdrop-filter:blur(24px);padding:28px var(--pad-side) 32px;border-bottom:1px solid var(--border);gap:20px;z-index:99}
+  .nav-links.show{display:flex}.hamburger{display:flex}
+  .blog-grid{grid-template-columns:1fr}
+  .blog-card--featured .blog-card__img{height:220px}
+  .footer-top{grid-template-columns:1fr 1fr;gap:32px}
+}
+@media(max-width:560px){.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:12px;text-align:center}.newsletter-form{flex-direction:column;border-radius:12px}.newsletter-form input,.newsletter-form button{border-radius:0}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="nav-logo"><span class="t">Tressana</span><span class="d">.ai</span></a>
+  <div class="nav-links">
+    <a href="/#features">Features</a>
+    <a href="/#types">Hair Types</a>
+    <a href="/about/">About</a>
+    <a href="/tressie/">Tressie</a>
+    <a href="/blog/" class="active">Blog</a>
+  </div>
+  <a href="/#quiz" class="nav-cta">Take the Quiz →</a>
+  <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-orb"></div>
+  <p class="page-hero-tag reveal">The Journal</p>
+  <h1 class="reveal">The Tressana <em>Journal.</em></h1>
+  <p class="page-hero-sub reveal">Science-backed hair care, texture intelligence, and the future of inclusive beauty — written for every type.</p>
+</section>
+
+<section class="blog-sec">
+  <div class="blog-grid">
+
+    <!-- Featured -->
+    <a href="/blog/understanding-your-hair-type/" class="blog-card blog-card--featured reveal">
+      <div class="blog-card__img-wrap">
+        <img class="blog-card__img" src="/img-curly.jpg" alt="Understanding hair types from 1A to 4C">
+        <span class="blog-card__cat">Hair Science</span>
+      </div>
+      <div class="blog-card__body">
+        <span class="blog-card__date">March 5, 2026</span>
+        <h2 class="blog-card__title">Understanding Your Hair Type: The Complete Guide from 1A to 4C</h2>
+        <p class="blog-card__excerpt">Hair typing is more than a letter and number. Learn the science behind the classification system, why porosity matters just as much as curl pattern, and how to identify your unique hair profile for better care decisions.</p>
+        <span class="blog-card__link">Read Article →</span>
+      </div>
+    </a>
+
+    <!-- Card 2 -->
+    <div class="blog-card reveal reveal-d1">
+      <div class="blog-card__img-wrap">
+        <img class="blog-card__img" src="/img-coily.jpg" alt="Why hair care AI needs diversity">
+        <span class="blog-card__cat">Technology</span>
+      </div>
+      <div class="blog-card__body">
+        <span class="blog-card__date">Coming Soon</span>
+        <h2 class="blog-card__title">Why Hair Care AI Needs Diverse Training Data</h2>
+        <p class="blog-card__excerpt">Most beauty AI was trained on limited textures. Here's why that's a problem and how Tressana is building differently.</p>
+        <span class="blog-card__link">Coming Soon →</span>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="blog-card reveal reveal-d2">
+      <div class="blog-card__img-wrap">
+        <img class="blog-card__img" src="/img-wavy.jpg" alt="Ingredients to avoid for textured hair">
+        <span class="blog-card__cat">Ingredients</span>
+      </div>
+      <div class="blog-card__body">
+        <span class="blog-card__date">Coming Soon</span>
+        <h2 class="blog-card__title">5 Ingredients to Avoid If You Have Textured Hair</h2>
+        <p class="blog-card__excerpt">Not all "natural" products are safe for coily and kinky textures. We break down the ingredients that silently damage Type 3 and 4 hair.</p>
+        <span class="blog-card__link">Coming Soon →</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <div class="newsletter-glow"></div>
+  <div class="reveal">
+    <h2>Stay <em>informed.</em></h2>
+    <p>Get new articles, hair tips, and Tressana updates delivered to your inbox.</p>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Your email address" aria-label="Email address">
+      <button type="button">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand"><span class="t">Tressana</span><span class="d">.ai</span></div>
+      <p class="footer-tagline">Your digital home for hair decisions. AI that sees you and celebrates your unique beauty.</p>
+    </div>
+    <div class="footer-col"><h4>Explore</h4><a href="/#features">Features</a><a href="/#types">Hair Types</a><a href="/#quiz">Take the Quiz</a></div>
+    <div class="footer-col"><h4>Company</h4><a href="/about/">About</a><a href="/tressie/">Tressie</a><a href="/blog/">Blog</a></div>
+    <div class="footer-col"><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 Tressana.ai — All rights reserved.</p>
+    <div class="footer-socials"><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Twitter</a></div>
+  </div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+let lastScroll=0;
+window.addEventListener('scroll',()=>{const n=document.querySelector('.nav'),c=window.pageYOffset;n.style.transform=c>lastScroll&&c>100?'translateY(-100%)':'translateY(0)';lastScroll=c});
+</script>
+</body>
+</html>

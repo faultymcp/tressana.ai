@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tressana.ai — Your Digital Home for Hair Decisions</title>
 <meta name="description" content="AI-powered hair care for every texture. Personalised routines, style inspiration, and product recommendations matched to your unique hair.">
+<link rel="canonical" href="https://tressana.ai/">
+<meta property="og:title" content="Tressana.ai — Your Digital Home for Hair Decisions">
+<meta property="og:description" content="AI-powered hair care for every texture. Personalised routines, style inspiration, and product recommendations.">
+<meta property="og:url" content="https://tressana.ai/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tressana">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Tressana","url":"https://tressana.ai","description":"AI-powered hair care for every texture."}</script>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
@@ -282,12 +290,13 @@ footer{padding:72px var(--pad-side) 36px;border-top:1px solid var(--border)}
 
 <!-- NAV -->
 <nav class="nav">
-  <a href="#" class="nav-logo"><span class="t">Tressana</span><span class="d">.ai</span></a>
+  <a href="/" class="nav-logo"><span class="t">Tressana</span><span class="d">.ai</span></a>
   <div class="nav-links">
-    <a href="#features">Features</a>
-    <a href="#how">How It Works</a>
-    <a href="#types">Hair Types</a>
-    <a href="#about">About</a>
+    <a href="/#features">Features</a>
+    <a href="/#types">Hair Types</a>
+    <a href="/about/">About</a>
+    <a href="/tressie/">Tressie</a>
+    <a href="/blog/">Blog</a>
   </div>
   <a href="#quiz" class="nav-cta">Take the Quiz →</a>
   <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')" aria-label="Menu">
@@ -551,15 +560,15 @@ footer{padding:72px var(--pad-side) 36px;border-top:1px solid var(--border)}
     </div>
     <div class="footer-col">
       <h4>Explore</h4>
-      <a href="#features">Features</a>
-      <a href="#types">Hair Types</a>
-      <a href="#quiz">Take the Quiz</a>
+      <a href="/#features">Features</a>
+      <a href="/#types">Hair Types</a>
+      <a href="/#quiz">Take the Quiz</a>
     </div>
     <div class="footer-col">
       <h4>Company</h4>
-      <a href="#about">About</a>
-      <a href="#">Careers</a>
-      <a href="mailto:hello@tressana.ai">Contact</a>
+      <a href="/about/">About</a>
+      <a href="/tressie/">Tressie</a>
+      <a href="/blog/">Blog</a>
     </div>
     <div class="footer-col">
       <h4>Legal</h4>
@@ -577,7 +586,7 @@ footer{padding:72px var(--pad-side) 36px;border-top:1px solid var(--border)}
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // Loader
 window.addEventListener('load', () => {
   setTimeout(() => document.getElementById('loader').classList.add('done'), 1800);
@@ -639,11 +648,4 @@ const tObs = new IntersectionObserver(entries => {
         tCanvas.classList.add('drawn');
       }, 3100);
     }
-  });
-}, { threshold: 0.3 });
-
-const aVisual = document.querySelector('.about-visual');
-if (aVisual) tObs.observe(aVisual);
-</script>
-</body>
-</html>
+ 
