@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tressana.ai — Your Digital Home for Hair Decisions</title>
+<title>Tressana.ai | Your Digital Home for Hair Decisions</title>
 <meta name="description" content="AI-powered hair care for every texture. Personalised routines, style inspiration, and product recommendations matched to your unique hair.">
 <link rel="canonical" href="https://tressana.ai/">
-<meta property="og:title" content="Tressana.ai — Your Digital Home for Hair Decisions">
+<meta property="og:title" content="Tressana.ai | Your Digital Home for Hair Decisions">
 <meta property="og:description" content="AI-powered hair care for every texture. Personalised routines, style inspiration, and product recommendations.">
 <meta property="og:url" content="https://tressana.ai/">
 <meta property="og:type" content="website">
@@ -47,11 +47,11 @@ img{max-width:100%;display:block}
 .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--grad);transition:width .3s}
 .nav-links a:hover{color:var(--porcelain)}
 .nav-links a:hover::after{width:100%}
-.nav-cta{font-family:var(--font-h);font-size:13px;font-weight:600;padding:10px 28px;border-radius:100px;border:none;cursor:pointer;background:var(--porcelain);color:var(--ink);transition:all .3s;letter-spacing:.3px}
-.nav-cta:hover{background:var(--lime);transform:scale(1.04)}
+.nav-cta{font-family:var(--font-h);font-size:13px;font-weight:600;padding:10px 28px;border-radius:100px;border:1px solid rgba(255,255,255,0.25);cursor:pointer;background:rgba(255,254,247,0.12);backdrop-filter:blur(16px) saturate(1.5);-webkit-backdrop-filter:blur(16px) saturate(1.5);color:var(--porcelain);transition:all .3s;letter-spacing:.3px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.15)}
+.nav-cta:hover{background:rgba(217,255,0,0.15);border-color:rgba(217,255,0,0.3);color:var(--lime);transform:scale(1.04);box-shadow:0 4px 20px rgba(217,255,0,0.15),inset 0 1px 0 rgba(255,255,255,0.2)}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
 .hamburger span{display:block;width:22px;height:2px;background:var(--porcelain);border-radius:2px;transition:all .3s}
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:140px var(--pad-side) 60px;position:relative;overflow:hidden}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:140px var(--pad-side) 80px;position:relative;overflow:hidden}
 .hero-orb1{position:absolute;top:-180px;right:-120px;width:700px;height:700px;background:radial-gradient(circle,rgba(118,67,172,0.15) 0%,transparent 60%);pointer-events:none}
 .hero-orb2{position:absolute;bottom:-250px;left:-150px;width:600px;height:600px;background:radial-gradient(circle,rgba(244,132,185,0.1) 0%,transparent 60%);pointer-events:none}
 .hero-orb3{position:absolute;top:30%;left:10%;width:300px;height:300px;background:radial-gradient(circle,rgba(217,255,0,0.04) 0%,transparent 70%);pointer-events:none;animation:floatSlow 12s ease infinite}
@@ -60,14 +60,13 @@ img{max-width:100%;display:block}
 .hero-h em{font-style:normal;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .hero-sub{font-size:clamp(15px,1.8vw,20px);font-weight:300;color:var(--muted);max-width:480px;line-height:1.65;margin-top:28px;opacity:0;animation:fadeUp .7s ease 2.2s forwards}
 .hero-btns{display:flex;gap:14px;margin-top:44px;flex-wrap:wrap;justify-content:center;opacity:0;animation:fadeUp .7s ease 2.4s forwards}
-.btn-grad{font-family:var(--font-h);font-size:15px;font-weight:600;padding:16px 40px;border-radius:100px;border:none;cursor:pointer;background:var(--grad);color:#fff;transition:all .3s;position:relative;overflow:hidden}
-.btn-grad:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(118,67,172,0.35)}
-.btn-ghost{font-family:var(--font-h);font-size:15px;font-weight:500;padding:16px 40px;border-radius:100px;cursor:pointer;background:transparent;color:var(--porcelain);border:1px solid rgba(255,254,247,0.15);transition:all .3s}
-.btn-ghost:hover{border-color:var(--lime);color:var(--lime)}
-.hero-scroll{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;opacity:0;animation:fadeUp .7s ease 2.8s forwards}
-.hero-scroll span{font-family:var(--font-m);font-size:11px;color:var(--lime);letter-spacing:3px;text-transform:uppercase}
-.hero-scroll svg{width:20px;height:20px;stroke:var(--lime);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;animation:scrollBounce 1.8s ease infinite}
-@keyframes scrollBounce{0%,100%{transform:translateY(0);opacity:.5}50%{transform:translateY(5px);opacity:1}}
+/* Glass buttons - iOS frosted style */
+.btn-grad{font-family:var(--font-h);font-size:15px;font-weight:600;padding:16px 40px;border-radius:100px;border:1px solid rgba(255,255,255,0.18);cursor:pointer;background:linear-gradient(135deg,rgba(118,67,172,0.35) 0%,rgba(244,132,185,0.2) 100%);backdrop-filter:blur(20px) saturate(1.8);-webkit-backdrop-filter:blur(20px) saturate(1.8);color:#fff;transition:all .4s;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(118,67,172,0.2),inset 0 1px 0 rgba(255,255,255,0.2),inset 0 -1px 0 rgba(0,0,0,0.1)}
+.btn-grad::before{content:'';position:absolute;top:0;left:0;right:0;height:50%;background:linear-gradient(180deg,rgba(255,255,255,0.12) 0%,rgba(255,255,255,0) 100%);pointer-events:none;border-radius:100px 100px 0 0}
+.btn-grad:hover{transform:translateY(-2px);box-shadow:0 14px 44px rgba(118,67,172,0.4),inset 0 1px 0 rgba(255,255,255,0.25),inset 0 -1px 0 rgba(0,0,0,0.1);border-color:rgba(255,255,255,0.25);background:linear-gradient(135deg,rgba(118,67,172,0.45) 0%,rgba(244,132,185,0.3) 100%)}
+.btn-ghost{font-family:var(--font-h);font-size:15px;font-weight:500;padding:16px 40px;border-radius:100px;cursor:pointer;background:rgba(255,254,247,0.06);backdrop-filter:blur(20px) saturate(1.5);-webkit-backdrop-filter:blur(20px) saturate(1.5);color:var(--porcelain);border:1px solid rgba(255,255,255,0.12);transition:all .4s;position:relative;overflow:hidden;box-shadow:inset 0 1px 0 rgba(255,255,255,0.1),inset 0 -1px 0 rgba(0,0,0,0.05)}
+.btn-ghost::before{content:'';position:absolute;top:0;left:0;right:0;height:50%;background:linear-gradient(180deg,rgba(255,255,255,0.06) 0%,rgba(255,255,255,0) 100%);pointer-events:none;border-radius:100px 100px 0 0}
+.btn-ghost:hover{border-color:rgba(217,255,0,0.3);color:var(--lime);background:rgba(217,255,0,0.08);box-shadow:0 8px 32px rgba(217,255,0,0.1),inset 0 1px 0 rgba(255,255,255,0.12)}
 @keyframes floatSlow{0%,100%{transform:translate(0,0)}50%{transform:translate(15px,-20px)}}
 .marquee{padding:36px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden}
 .marquee-track{display:flex;gap:24px;animation:marq 22s linear infinite;width:max-content}
@@ -78,8 +77,8 @@ img{max-width:100%;display:block}
 .sec-tag{font-family:var(--font-m);font-size:11px;color:var(--lime);letter-spacing:3px;text-transform:uppercase;margin-bottom:20px}
 .sec-h{font-family:var(--font-h);font-size:clamp(32px,5.5vw,64px);font-weight:800;line-height:1.05;letter-spacing:-2px;max-width:700px}
 .sec-h em{font-style:normal;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.sec-sub{font-size:16px;font-weight:300;color:var(--muted);line-height:1.7;max-width:520px;margin-top:20px;text-align:justify;hyphens:auto}
-.feat-desc,.step p,.about-text p,.value p,.type-desc,.footer-tagline,.cta-sub{text-align:justify;hyphens:auto}
+.sec-sub{font-size:16px;font-weight:300;color:var(--muted);line-height:1.7;max-width:520px;margin-top:20px}
+.feat-desc,.about-text p,.value p,.type-desc,.footer-tagline,.cta-sub{line-height:1.7}
 .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-areas:"hero hero routine" "hero hero gallery" "salons products scalp";gap:12px;margin-top:56px}
 .feat-card{background:var(--bg2);padding:36px 32px;border:1px solid var(--border);transition:all .4s;position:relative;overflow:hidden;border-radius:6px}
 .feat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad);opacity:.25;transition:opacity .4s}
@@ -141,6 +140,9 @@ img{max-width:100%;display:block}
 .cta-h{font-family:var(--font-h);font-size:clamp(36px,7vw,80px);font-weight:800;line-height:1;letter-spacing:-3px;position:relative}
 .cta-h em{font-style:normal;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .cta-sub{font-size:17px;color:var(--muted);font-weight:300;margin:24px auto 44px;max-width:420px;line-height:1.6}
+/* Glass CTA button */
+.cta .btn-grad{background:linear-gradient(135deg,rgba(118,67,172,0.4) 0%,rgba(244,132,185,0.25) 100%);backdrop-filter:blur(24px) saturate(2);-webkit-backdrop-filter:blur(24px) saturate(2);border:1px solid rgba(255,255,255,0.2);box-shadow:0 8px 32px rgba(118,67,172,0.25),inset 0 1px 0 rgba(255,255,255,0.2),inset 0 -1px 0 rgba(0,0,0,0.1)}
+.cta .btn-grad:hover{background:linear-gradient(135deg,rgba(118,67,172,0.55) 0%,rgba(244,132,185,0.35) 100%);box-shadow:0 16px 48px rgba(118,67,172,0.45),inset 0 1px 0 rgba(255,255,255,0.25)}
 footer{padding:72px var(--pad-side) 36px;border-top:1px solid var(--border)}
 .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:64px}
 .footer-brand{font-family:var(--font-h);font-size:24px;font-weight:700;margin-bottom:14px}
@@ -182,32 +184,31 @@ footer{padding:72px var(--pad-side) 36px;border-top:1px solid var(--border)}
 <nav class="nav">
 <a href="/" class="nav-logo"><span class="t">Tressana</span><span class="d">.ai</span></a>
 <div class="nav-links"><a href="/#features">Features</a><a href="/#types">Hair Types</a><a href="/about/">About</a><a href="/tressie/">Tressie</a><a href="/blog/">Blog</a></div>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSddSaERbxHU3TtNKtQLlMgASR5AtvPUcEHIc8Uy68WOjfrrzQ/viewform" target="_blank" class="nav-cta">Join the Waitlist →</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSddSaERbxHU3TtNKtQLlMgASR5AtvPUcEHIc8Uy68WOjfrrzQ/viewform" target="_blank" class="nav-cta">Join the Waitlist</a>
 <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 <section class="hero"><div class="hero-orb1"></div><div class="hero-orb2"></div><div class="hero-orb3"></div>
 <p class="hero-tag">AI-powered hair care for every texture</p>
 <h1 class="hero-h">Your hair,<br><em>understood.</em></h1>
-<p class="hero-sub">Stop guessing what works. Tressie matches products, styles, and stylists to your unique texture — powered by hair science and AI.</p>
-<div class="hero-btns"><a href="#features" class="btn-grad">See What Tressie Can Do →</a><a href="#about" class="btn-ghost">Our Story</a></div>
-<div class="hero-scroll"><span>Scroll</span><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+<p class="hero-sub">Stop guessing what works. Tressie matches products, styles, and stylists to your unique texture, powered by hair science and AI.</p>
+<div class="hero-btns"><a href="#features" class="btn-grad">See What Tressie Can Do</a><a href="#about" class="btn-ghost">Our Story</a></div>
 </section>
 <div class="marquee"><div class="marquee-track">
 <span class="marquee-item"><span class="marquee-dot"></span>All Hair Types</span><span class="marquee-item"><span class="marquee-dot"></span>AI-Powered Analysis</span><span class="marquee-item"><span class="marquee-dot"></span>Personalised Routines</span><span class="marquee-item"><span class="marquee-dot"></span>25,000+ Styles</span><span class="marquee-item"><span class="marquee-dot"></span>Find Salons Near You</span><span class="marquee-item"><span class="marquee-dot"></span>Product Recommendations</span><span class="marquee-item"><span class="marquee-dot"></span>Routine Tracking</span><span class="marquee-item"><span class="marquee-dot"></span>Type 1 to 4C</span>
 <span class="marquee-item"><span class="marquee-dot"></span>All Hair Types</span><span class="marquee-item"><span class="marquee-dot"></span>AI-Powered Analysis</span><span class="marquee-item"><span class="marquee-dot"></span>Personalised Routines</span><span class="marquee-item"><span class="marquee-dot"></span>25,000+ Styles</span><span class="marquee-item"><span class="marquee-dot"></span>Find Salons Near You</span><span class="marquee-item"><span class="marquee-dot"></span>Product Recommendations</span><span class="marquee-item"><span class="marquee-dot"></span>Routine Tracking</span><span class="marquee-item"><span class="marquee-dot"></span>Type 1 to 4C</span>
 </div></div>
 <section class="sec" id="features">
-<div class="reveal"><p class="sec-tag">What Tressie does</p><h2 class="sec-h">Six ways she's got <em>your back.</em></h2><p class="sec-sub">From daily routines to finding the right stylist — Tressie covers every part of your hair journey.</p></div>
+<div class="reveal"><p class="sec-tag">What Tressie does</p><h2 class="sec-h">Six ways she's got <em>your back.</em></h2><p class="sec-sub">From daily routines to finding the right stylist, Tressie covers every part of your hair journey.</p></div>
 <div class="feat-grid">
-<div class="feat-card feat-card--large reveal"><span class="feat-num">01</span><div class="feat-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h3 class="feat-name">Meet Tressie</h3><p class="feat-desc">Your AI hair companion that maps your curl pattern, porosity, scalp health, and goals into a complete hair profile — then gives you personalised routines, product picks, and style inspiration that actually work for your texture.</p><div class="feat-badge">AI-powered · personalised to you</div></div>
-<div class="feat-card feat-card--routine reveal reveal-d1"><span class="feat-num">02</span><div class="feat-icon"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><h3 class="feat-name">Custom Routines</h3><p class="feat-desc">Wash day schedules, deep conditioning plans, and protective style rotations — built for your exact type and porosity.</p></div>
+<div class="feat-card feat-card--large reveal"><span class="feat-num">01</span><div class="feat-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h3 class="feat-name">Meet Tressie</h3><p class="feat-desc">Your AI hair companion that maps your curl pattern, porosity, scalp health, and goals into a complete hair profile. Then she gives you personalised routines, product picks, and style inspiration that actually work for your texture.</p><div class="feat-badge">AI-powered · personalised to you</div></div>
+<div class="feat-card feat-card--routine reveal reveal-d1"><span class="feat-num">02</span><div class="feat-icon"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><h3 class="feat-name">Custom Routines</h3><p class="feat-desc">Wash day schedules, deep conditioning plans, and protective style rotations, built for your exact type and porosity.</p></div>
 <div class="feat-card feat-card--gallery reveal reveal-d2"><span class="feat-num">03</span><div class="feat-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><h3 class="feat-name">Style Gallery</h3><p class="feat-desc">25,000+ curated hairstyle photos filtered by your type.</p></div>
 <div class="feat-card feat-card--salons reveal reveal-d1"><span class="feat-num">04</span><div class="feat-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><h3 class="feat-name">Find Salons</h3><p class="feat-desc">Top-rated salons and stylists near you who specialise in your texture.</p></div>
 <div class="feat-card feat-card--products reveal reveal-d2"><span class="feat-num">05</span><div class="feat-icon"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div><h3 class="feat-name">Product Picks</h3><p class="feat-desc">Recommendations matched to your porosity, density, and goals.</p></div>
 <div class="feat-card feat-card--scalp reveal reveal-d3"><span class="feat-num">06</span><div class="feat-icon"><svg viewBox="0 0 24 24"><path d="M12 3C8.7 3 6 5.7 6 9c0 2.6 1.5 4.9 3.8 6V17h4.4v-2c2.3-1.1 3.8-3.4 3.8-6 0-3.3-2.7-6-6-6z"/><line x1="9.5" y1="17" x2="14.5" y2="17"/><line x1="10.5" y1="19.5" x2="13.5" y2="19.5"/></svg></div><h3 class="feat-name">Scalp Health</h3><p class="feat-desc">Targeted insights for dryness, oiliness, sensitivity, and buildup.</p></div>
 </div></section>
 <div class="stats"><div class="stats-grid">
-<div class="reveal"><div class="stat-num">1A—4C</div><div class="stat-lbl">Every hair type covered</div></div>
+<div class="reveal"><div class="stat-num">1A to 4C</div><div class="stat-lbl">Every hair type covered</div></div>
 <div class="reveal reveal-d1"><div class="stat-num">25K+</div><div class="stat-lbl">Curated style photos</div></div>
 <div class="reveal reveal-d2"><div class="stat-num">5K+</div><div class="stat-lbl">Salons in our network</div></div>
 <div class="reveal reveal-d3"><div class="stat-num">UK</div><div class="stat-lbl">Beta launching soon</div></div>
@@ -215,18 +216,18 @@ footer{padding:72px var(--pad-side) 36px;border-top:1px solid var(--border)}
 <section class="sec" id="types">
 <div class="reveal"><p class="sec-tag">Every texture welcome</p><h2 class="sec-h">Built for <em>all hair types.</em></h2><p class="sec-sub">From pin-straight to tight coils, Tressana covers the full spectrum. Your hair, your rules.</p></div>
 <div class="types-grid">
-<div class="type-card reveal"><img class="type-img" src="img-straight.jpg" alt="Straight hair — Type 1"><div class="type-name">Straight</div><div class="type-range">Type 1A — 1C</div><div class="type-desc">Fine to coarse, no natural curl. Needs volume and lightweight care.</div></div>
-<div class="type-card reveal reveal-d1"><img class="type-img" src="img-wavy.jpg" alt="Wavy hair — Type 2"><div class="type-name">Wavy</div><div class="type-range">Type 2A — 2C</div><div class="type-desc">Gentle S-bends to deep waves. The in-between that needs its own playbook.</div></div>
-<div class="type-card reveal reveal-d2"><img class="type-img" src="img-curly.jpg" alt="Curly hair — Type 3"><div class="type-name">Curly</div><div class="type-range">Type 3A — 3C</div><div class="type-desc">Springy spirals to tight corkscrews. Definition, moisture, and bounce.</div></div>
-<div class="type-card reveal reveal-d3"><img class="type-img" src="img-coily.jpg" alt="Coily hair — Type 4"><div class="type-name">Coily</div><div class="type-range">Type 4A — 4C</div><div class="type-desc">Coils, zig-zags, and tight patterns. Incredibly versatile, needs deep moisture.</div></div>
+<div class="type-card reveal"><img class="type-img" src="img-straight.jpg" alt="Straight hair, Type 1"><div class="type-name">Straight</div><div class="type-range">Type 1A to 1C</div><div class="type-desc">Fine to coarse, no natural curl. Needs volume and lightweight care.</div></div>
+<div class="type-card reveal reveal-d1"><img class="type-img" src="img-wavy.jpg" alt="Wavy hair, Type 2"><div class="type-name">Wavy</div><div class="type-range">Type 2A to 2C</div><div class="type-desc">Gentle S-bends to deep waves. The in-between that needs its own playbook.</div></div>
+<div class="type-card reveal reveal-d2"><img class="type-img" src="img-curly.jpg" alt="Curly hair, Type 3"><div class="type-name">Curly</div><div class="type-range">Type 3A to 3C</div><div class="type-desc">Springy spirals to tight corkscrews. Definition, moisture, and bounce.</div></div>
+<div class="type-card reveal reveal-d3"><img class="type-img" src="img-coily.jpg" alt="Coily hair, Type 4"><div class="type-name">Coily</div><div class="type-range">Type 4A to 4C</div><div class="type-desc">Coils, zig-zags, and tight patterns. Incredibly versatile, needs deep moisture.</div></div>
 </div></section>
 <section class="sec" id="about">
 <div class="reveal"><p class="sec-tag">Why we're building this</p><h2 class="sec-h">Hair tech has a <em>representation problem.</em></h2></div>
 <div class="about-grid">
 <div class="about-text reveal">
-<p>The hair care industry generates billions, yet most of its technology was built around straight textures. Type 4 coily hair — worn by millions — remains an afterthought.</p>
+<p>The hair care industry generates billions, yet most of its technology was built around straight textures. Type 4 coily hair, worn by millions, remains an afterthought.</p>
 <p>We started Tressana because we were tired of the guesswork. Tired of product graveyards. Tired of salon anxiety. So we combined real hair science with AI to build something that actually sees you.</p>
-<p>Tressie analyses your porosity, density, scalp health, and strand pattern to deliver care that's genuinely personal — not another one-size-fits-all recommendation engine.</p>
+<p>Tressie analyses your porosity, density, scalp health, and strand pattern to deliver care that's genuinely personal, not another one-size-fits-all recommendation engine.</p>
 </div>
 <div class="about-visual reveal reveal-d2">
 <div class="tressie-glow"></div>
@@ -238,13 +239,13 @@ footer{padding:72px var(--pad-side) 36px;border-top:1px solid var(--border)}
 </svg></div><p class="tressie-label">your AI hair companion</p></div></div></div>
 <div class="values">
 <div class="value reveal"><h4><span>●</span> Inclusive</h4><p>Every hair type, every texture, every person. We celebrate what makes you unique.</p></div>
-<div class="value reveal reveal-d1"><h4><span>●</span> Science-backed</h4><p>Porosity, density, elasticity — our recommendations are rooted in real hair science.</p></div>
+<div class="value reveal reveal-d1"><h4><span>●</span> Science-backed</h4><p>Porosity, density, elasticity: our recommendations are rooted in real hair science.</p></div>
 <div class="value reveal reveal-d2"><h4><span>●</span> Empowering</h4><p>We give you the knowledge. You make the decisions. No shame, no pressure.</p></div>
 </div></section>
 <section class="cta" id="waitlist"><div class="cta-glow"></div><div class="reveal">
 <h2 class="cta-h">Stop guessing.<br><em>Start knowing.</em></h2>
 <p class="cta-sub">We're opening our Tressie Beta to a small group of testers. Get early access to AI-powered hair care built for your texture.</p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSddSaERbxHU3TtNKtQLlMgASR5AtvPUcEHIc8Uy68WOjfrrzQ/viewform" target="_blank" class="btn-grad" style="font-size:17px;padding:18px 48px">Get Early Access →</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSddSaERbxHU3TtNKtQLlMgASR5AtvPUcEHIc8Uy68WOjfrrzQ/viewform" target="_blank" class="btn-grad" style="font-size:17px;padding:18px 48px">Get Early Access</a>
 </div></section>
 <footer><div class="footer-top"><div>
 <div class="footer-brand"><span class="t">Tressana</span><span class="d">.ai</span></div>
@@ -255,7 +256,7 @@ footer{padding:72px var(--pad-side) 36px;border-top:1px solid var(--border)}
 </div>
 <div class="footer-bottom">
   <div>
-    <p class="footer-copy">© 2026 Tressana.ai — All rights reserved.</p>
+    <p class="footer-copy">&copy; 2026 Tressana.ai. All rights reserved.</p>
     <p class="footer-copy" style="margin-top: 6px; opacity: 0.7; font-size: 11px; line-height: 1.5;">
       Tressana Ai Ltd is registered in England and Wales (Company No. 17064009).<br>
       Registered Office: 128 City Road, London, EC1V 2NX.
